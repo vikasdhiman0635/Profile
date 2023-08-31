@@ -1,0 +1,19 @@
+node
+{
+    stage('checkout PCM')
+    {
+        git branch: 'main',
+        url: 'https://github.com/vikasdhiman0635/PCM.git'
+    }
+    stage('install node modules'){
+        sh: 'npm install'
+    }
+    stage('Build')
+    {
+        sh: 'npm run build --prod'
+    }
+    stage('Test')
+    {
+        sh: 'npm test'
+    }
+}

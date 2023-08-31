@@ -1,0 +1,16 @@
+<h1>Skils</h1>
+<br>
+<div class="row box">
+    <div class="col-md-12">
+        <h3>Languages</h3>
+        <label *ngFor="let skill of allSkills; let i=index;" class="skills">{{skill.skillName}}</label>
+        <br>
+        <br>
+        <h3>Softwares</h3>
+        <label *ngFor="let skill of software; let i=index;" class="skills">{{skill.name}}</label>
+        <br>
+        <br>
+        <h3>Operating System</h3>
+        <label *ngFor="let skill of os; let i=index;" class="skills">{{skill.name}}</label>
+    </div>
+</div>
