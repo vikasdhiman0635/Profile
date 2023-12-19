@@ -11,6 +11,7 @@ progress {
     margin-left: 20px;
     border-radius: 10px;
     text-align: center;
+    align-items: center;
     justify-content: center;
     line-height: 28px;
     border: none;
