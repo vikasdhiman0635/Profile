@@ -1,7 +1,6 @@
 *
 {
   color: white;
-  user-select: none;
 }
 
 .contant
@@ -27,6 +26,7 @@
   padding-bottom: 5px;
   box-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+
 .githubs
 {
   padding-left: 10px;
@@ -40,7 +40,7 @@
 }
 .vectors .vector2
 {
-  margin-top: 163px;
+  margin-top: 3px;
   margin-right: -30px;
 }
 @media only screen and (max-width: 1200px) {

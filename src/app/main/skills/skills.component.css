@@ -3,10 +3,14 @@ progress {
 }
 
 .skills {
-    padding-left: 10px;
+    /* padding-left: 10px;
     padding-right: -200px;
     padding-top: 3px;
-    padding-right: 5px;
+    padding-right: 5px; */
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
     background-color: rgb(54, 98, 98);
     margin-left: 20px;
     border-radius: 10px;

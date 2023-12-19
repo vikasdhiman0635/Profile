@@ -6,6 +6,120 @@ import { Observable } from 'rxjs';
 })
 export class ProjectService {
 
+  compnayProjects= [
+    {
+      id: "1",
+      projectname: "Process Org Utility",
+      statedate: "Oct 2023",
+      enddate: "Present",
+      Accomplishment: "Successfully streamlined query processes for non-technical teams, saving valuable time, and fostering a more efficient workflow with the ongoing development of the integrated Angular frontend and Spring Boot backend.",
+      details: [
+        {
+          desc: "Currently spearheading the development and maintenance of backend APIs using Spring Boot, seamlessly integrating with multiple databases."
+        },
+        {
+          desc: "Actively crafting an intuitive Angular frontend with Material Design, optimizing query workflows for non-technical teams, particularly helpdesk."
+        },
+        {
+          desc: "Ongoing efforts to improve system performance, establish robust communication channels, and regularly gather user feedback for continuous enhancements."
+        }
+      ]
+    },
+    {
+      id: "2",
+      projectname: "Perseus",
+      statedate: "Sept 2023",
+      enddate: "Present",
+      Accomplishment: "Significantly, enabled the inspection of traffic, operational pods, and pod characteristics through this application, streamlining the monitoring process compared to the previously used Openshift, Gearsphear, and Pass platforms.",
+      details: [
+        {
+          desc: "Implemented parallel zip functionality for backend calls, enhancing performance and efficiency."
+        },
+        {
+          desc: "Leveraged the same technology stack employed in the Sanwiki app for the development of this application."
+        },
+        {
+          desc: "Utilized Clearity and Material Grid to display and enable future editing, sorting, and searching of work items."
+        },
+        {
+          desc: "Regularly utilized Jenkins, Gitlab, and AWS for daily tasks and end-of-day deployment of modifications."
+        }
+      ]
+    },
+    {
+      id: "3",
+      projectname: "Sanwiki",
+      statedate: "Aug 2023",
+      enddate: "Sept 2023",
+      Accomplishment: "Notably, provided the organization’s users with a unified platform for easily tracking server data, eliminating the need to use multiple platforms.",
+      details: [
+        {
+          desc: "Developed an Angular application with a front-end built using Material UI."
+        },
+        {
+          desc: "Designed and implemented an Angular microservice from scratch with a focus on efficiency and minimal code footprint"
+        },
+        {
+          desc: "Deployed the application using Gitlab, Jenkins, Docker, Openshift, and Pass for streamlined development and deployment."
+        },
+        {
+          desc: "Implemented lazy loading principles and router guards to efficiently control the application’s routing."
+        }
+      ]
+    },
+    {
+      id: "4",
+      projectname: "Patching Management",
+      statedate: "Sept 2022",
+      enddate: "Mar 2023",
+      Accomplishment: "A notable achievement was handling large volumes of server data efficiently through this project.",
+      details: [
+        {
+          desc: "Led the management of frontend, backend APIs, and the database."
+        },
+        {
+          desc: "Employed MySQL as the database, Spring Boot as the backend, and Angular 12 as the frontend framework."
+        },
+        {
+          desc: "Engineered a robust web project with a strong emphasis on security principles."
+        },
+        {
+          desc: "Achieved performance optimization and increased code coverage."
+        },
+        {
+          desc: "Designed the system to allow users to apply filters for data organization, making it searchable and editable, and enabling data export to Excel format."
+        },
+        {
+          desc: "Developed a dashboard to generate reports on various time scales (hourly, daily, weekly, monthly, and yearly) and export them in Excel format."
+        }
+      ]
+    },
+    {
+      id: "5",
+      projectname: "Airline Reservation System (Echo Flights)",
+      statedate: "Jan 2022",
+      enddate: "Jan 2022",
+      Accomplishment: "A noteworthy accomplishment of the project is the user-friendly feature allowing users to check available flight seats without the need to log in, offering individual seat control within a single ticket, which accommodates up to 5 seats.",
+      details: [
+        {
+          desc: "Utilized Angular for the front-end and Spring Boot for the back-end, with MySQL serving as the database, and implemented RESTful APIs through microservices."
+        },
+        {
+          desc: "Successfully established a connection with the database and meticulously crafted the back-end, rigorously testing the application on various platforms to ensure seamless operation."
+        },
+        {
+          desc: "Created an intuitive dashboard to generate comprehensive reports on a weekly, monthly, and annual basis, providing users with valuable insights."
+        },
+        {
+          desc: "Wrote extensive test cases for the Spring Boot application using Junit and Mockito to ensure robust functionality and reliability."
+        },
+        {
+          desc: "Achieved a significant improvement in the project’s code coverage, resulting in an impressive 97% score on SonarScanner, indicating high code quality and performance optimization."
+        }
+      ]
+    },
+  ];
+
 
   projects = [
     {

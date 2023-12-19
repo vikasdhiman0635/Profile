@@ -15,4 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  github(){
+    console.log("not working");
+    window.open("https://github.com/vikasdhiman0635/");
+  }
+
 }

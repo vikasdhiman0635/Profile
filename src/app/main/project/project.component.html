@@ -16,6 +16,53 @@
     </div>
     <br>
     <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Compnay Projects</h1>
+            <br>
+        </div>
+        <div class="col-md-12">
+            <div class="row" *ngFor="let project of compnayproject">
+                <div class="col-md-4">
+                    <h1 class="text-center">
+                        {{project.projectname}}
+                    </h1>
+                    <hr style="height: 2px; color: white; background-color: wheat;" />
+                    <br>
+                    <p>
+                        <strong style="color: wheat;">Category: </strong> Web Project
+                    </p>
+                    <p>
+                        <strong style="color: wheat;">Project Date: </strong> {{project.statedate}} - {{project.enddate}}
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <h3>Details</h3>
+                    <ul>
+                        <li *ngFor="let lis of project.details">
+                            {{lis.desc}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <span style="color: wheat;">
+                        Accomplishment - 
+                    </span>&nbsp;
+                    {{project.Accomplishment}}
+                    <br>
+                    <hr style="height: 2px; color: white; background-color: wheat;" />
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <br>
+            <br>
+            <h1>Other Projects</h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-4 boxx" *ngFor="let data of projects">
             <img [src]="data.image" class="image" width="100%" alt="">
             
