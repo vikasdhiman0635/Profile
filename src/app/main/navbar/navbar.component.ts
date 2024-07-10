@@ -9,14 +9,13 @@ declare var $: any;
 })
 export class NavbarComponent implements OnInit {
 
-
   constructor(private router: Router) { }
 
-  @Input() project:string="";
-  @Input() home:string="";
-  @Input() about:string="";
-  @Input() service:string="";
-  @Input() resume:string="";
+  @Input() project: string = "";
+  @Input() home: string = "";
+  @Input() about: string = "";
+  @Input() service: string = "";
+  @Input() resume: string = "";
 
   ngOnInit(): void {
   }
@@ -31,11 +30,10 @@ export class NavbarComponent implements OnInit {
     else if (data == "resume") {
       this.router.navigate(['/m/resume']);
     }
-    else if(data == "service"){
+    else if (data == "service") {
       this.router.navigate(['/m/service'])
     }
-    else if(data == "project")
-    {
+    else if (data == "project") {
       this.router.navigate(['/m/project'])
     }
   }

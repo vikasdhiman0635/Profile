@@ -13,7 +13,7 @@ export class ProjectComponent implements OnInit {
 
   projects: any[] | any;
 
-  compnayproject: any[] =[];
+  compnayproject: any[] = [];
 
   constructor(
     private service: ProjectService,
@@ -22,7 +22,7 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.projects = this.service.getall();
-    this.compnayproject= this.service.compnayProjects;
+    this.compnayproject = this.service.compnayProjects;
   }
 
 

@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewProjectComponent } from './view-project.component';
+import { ActivatedRoute } from '@angular/router';
+import { ProjectService } from 'src/app/Service/project.service';
 
 describe('ViewProjectComponent', () => {
   let component: ViewProjectComponent;
@@ -8,9 +10,16 @@ describe('ViewProjectComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ViewProjectComponent ]
-    })
-    .compileComponents();
+      declarations: [
+        ViewProjectComponent
+      ],
+      imports: [
+        ActivatedRoute
+      ],
+      providers: [
+        ProjectService
+      ]
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +31,6 @@ describe('ViewProjectComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

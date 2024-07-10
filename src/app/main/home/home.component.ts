@@ -1,4 +1,4 @@
-import { Component,HostListener, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
 @Component({
@@ -8,14 +8,14 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  home:string="active";
+  home: string = "active";
 
-  constructor(@Inject(DOCUMENT) private document:Document) { }
+  constructor(@Inject(DOCUMENT) private document: Document) { }
 
   ngOnInit(): void {
   }
 
-  github(){
+  github() {
     console.log("not working");
     window.open("https://github.com/vikasdhiman0635/");
   }

@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
 
-  compnayProjects= [
+  compnayProjects = [
     {
       id: "1",
       projectname: "Process Org Utility",

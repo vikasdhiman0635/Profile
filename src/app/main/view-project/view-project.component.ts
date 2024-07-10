@@ -9,9 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ViewProjectComponent implements OnInit {
 
+
   id: any;
 
-  project:any
+  project: any
 
   constructor(
     private aroute: ActivatedRoute,
@@ -21,9 +22,8 @@ export class ViewProjectComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.aroute.snapshot.params['id'];
     console.log(this.id);
-    if(this.id!=null)
-    {
-      this.project=this.service.getById(this.id);
+    if (this.id != null) {
+      this.project = this.service.getById(this.id);
       console.log(this.project);
     }
   }
