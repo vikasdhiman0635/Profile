@@ -8,9 +8,33 @@ export class ProjectService {
   compnayProjects = [
     {
       id: "1",
+      projectname: "Postgres DB connector",
+      statedate: "September 2024",
+      enddate: "November 2024",
+      Accomplishment: "Successfully containerized pgAdmin4 on a UBI9 image, overcoming proxy restrictions by manually managing RPM installations. Automated deployment using GitLab and Jenkins on Red Hat, streamlined processes under strict security constraints, and resolved complex network and proxy issues to ensure seamless operation.",
+      details: [
+        {
+          desc: "Wrote a robust Dockerfile to containerize pgAdmin4 on a UBI9 image, enabling efficient deployment and streamlined database management operations."
+        },
+        {
+          desc: "Managed installation of multiple RPM files manually due to proxy limitations, ensuring successful setup and operation in a restricted network environment."
+        },
+        {
+          desc: "Automated deployment on Red Hat using GitLab and Jenkins, creating a reliable CI/CD pipeline for efficient and consistent application delivery."
+        },
+        {
+          desc: "Troubleshooted complex network and proxy issues, implementing effective solutions to ensure smooth deployment and uninterrupted application functionality in secure environments."
+        },
+        {
+          desc: "Streamlined the build process by optimizing workflows and configurations, ensuring efficiency while maintaining strict adherence to security and compliance standards."
+        }
+      ]
+    },
+    {
+      id: "2",
       projectname: "Process Org Utility",
-      statedate: "Oct 2023",
-      enddate: "Present",
+      statedate: "October 2023",
+      enddate: "January - 2024",
       Accomplishment: "Successfully streamlined query processes for non-technical teams, saving valuable time, and fostering a more efficient workflow with the ongoing development of the integrated Angular frontend and Spring Boot backend.",
       details: [
         {
@@ -25,10 +49,10 @@ export class ProjectService {
       ]
     },
     {
-      id: "2",
+      id: "3",
       projectname: "Perseus",
-      statedate: "Sept 2023",
-      enddate: "Present",
+      statedate: "September 2023",
+      enddate: "March - 2024",
       Accomplishment: "Significantly, enabled the inspection of traffic, operational pods, and pod characteristics through this application, streamlining the monitoring process compared to the previously used Openshift, Gearsphear, and Pass platforms.",
       details: [
         {
@@ -46,7 +70,7 @@ export class ProjectService {
       ]
     },
     {
-      id: "3",
+      id: "4",
       projectname: "Sanwiki",
       statedate: "Aug 2023",
       enddate: "Sept 2023",
@@ -67,7 +91,7 @@ export class ProjectService {
       ]
     },
     {
-      id: "4",
+      id: "5",
       projectname: "Patching Management",
       statedate: "Sept 2022",
       enddate: "Mar 2023",
@@ -94,7 +118,7 @@ export class ProjectService {
       ]
     },
     {
-      id: "5",
+      id: "6",
       projectname: "Airline Reservation System (Echo Flights)",
       statedate: "Jan 2022",
       enddate: "Jan 2022",
